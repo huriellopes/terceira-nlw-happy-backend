@@ -82,6 +82,10 @@ yarn typeorm migration:revert ou npm typeorm migration:revert
 yarn dev:server
 ````
 
+#### Teste de Api
+
+> Para testar a api, pegue o arquivo do endpoint e importe para o insomnia!
+
 ## 📑 Licença
 
 Este projeto está sob a licença MIT. Veja aqui [Licença](LICENSE)
