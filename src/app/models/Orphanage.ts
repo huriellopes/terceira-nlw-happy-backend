@@ -16,6 +16,9 @@ class Orphanage {
   name: string
 
   @Column()
+  phone: string
+
+  @Column()
   latitude: number
 
   @Column()

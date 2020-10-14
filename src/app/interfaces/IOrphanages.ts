@@ -1,5 +1,6 @@
 export interface IOrphanages {
   name: string
+  phone: string
   latitude: number
   longitude: number
   about: string

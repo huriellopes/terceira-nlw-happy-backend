@@ -23,6 +23,7 @@ class OrphanagesController {
   async create(req: Request, res: Response) {
     const {
       name,
+      phone,
       latitude,
       longitude,
       about,
@@ -36,6 +37,7 @@ class OrphanagesController {
     const orphanage = await orphanagesService.create(
       {
         name,
+        phone,
         latitude,
         longitude,
         about,

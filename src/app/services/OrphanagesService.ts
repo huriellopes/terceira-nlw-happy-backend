@@ -27,6 +27,7 @@ class OrphanagesService {
   async create(
     {
       name,
+      phone,
       latitude,
       longitude,
       about,
@@ -45,17 +46,19 @@ class OrphanagesService {
 
     const data = {
       name,
+      phone,
       latitude,
       longitude,
       about,
       instructions,
       opening_hours,
-      open_on_weekends,
+      open_on_weekends: open_on_weekends === 'true',
       images: image,
     }
 
     const schema = Yup.object().shape({
       name: Yup.string().required(),
+      phone: Yup.string().required(),
       latitude: Yup.number().required(),
       longitude: Yup.number().required(),
       about: Yup.string().required().max(300),
