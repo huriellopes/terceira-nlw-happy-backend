@@ -52,7 +52,7 @@ class OrphanagesService {
       about,
       instructions,
       opening_hours,
-      open_on_weekends: open_on_weekends === 'true',
+      open_on_weekends: String(open_on_weekends) === 'true',
       images: image,
     }
 

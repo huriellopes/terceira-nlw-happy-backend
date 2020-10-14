@@ -55,7 +55,7 @@ DB_CONNECTION="sqlite"
 DB_NAME="./src/database/database.sqlite"
 
 # Caso queira usar o postgreSQL, e for usar o docker, rode o seguinte comando:
-docker run --name gostack_postgres -e POSTGRES_PASSWORD=senha -p 5432:5432 -d postgres
+docker run --name database -e POSTGRES_PASSWORD=senha -p 5432:5432 -d postgres
 
 # Caso tenha o postgreSQL local, apenas configure as variaveis de ambiente!
 ```

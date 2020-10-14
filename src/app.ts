@@ -50,6 +50,12 @@ app.use((err: Errback, req: Request, res: Response, next: NextFunction) => {
     })
   }
 
+  if (process.env.APP_DEBUG) {
+    return res.status(400).json({
+      message: err,
+    })
+  }
+
   return res.status(500).json({ message: 'Internal Error' })
 })
 

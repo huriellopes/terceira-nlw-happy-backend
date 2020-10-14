@@ -19,6 +19,7 @@ build/*
 
 # Package manager
 yarn-error.log
+yarn.lock
 node_modules/*
 
 uploads/*
