@@ -19,6 +19,7 @@
 - express-async-errors
 - DotEnv
 - Sqlite3
+- PostgreSQL
 - Eslint
 - Prettier
 
